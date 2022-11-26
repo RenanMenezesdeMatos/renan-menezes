@@ -27,10 +27,12 @@ body{
 header{
     background-color: var(--brancoclaro);
     text-align: center;
+    width: 100vw;
 }
 header > menu{
     background-color: white;
     height: 45px;
+    width: 100vw;
 }
 header > h1{
     color: var(--laranja);
@@ -50,7 +52,7 @@ header > h2{
 }
 header > p{
     font-size: 1em;
-    max-width: 500px;
+    max-width: 710px;
     display: inline-block;
     padding: auto;
     padding-bottom: 20px;
@@ -58,17 +60,25 @@ header > p{
 /* BACKGROUND DE CADA AREA*/
 .area1{
     background-color: white;
+    width: 100vw;
 }
 .area2{
     background-color: var(--brancoclaro);
+    width: 100vw;
 }
 .area3{
     background-color: var(--azulescuro);
+    width: 100vw;
+}
+footer{
+    max-width: 100vw;
+    padding-left: 20px;
+    color: white;
 }
 /* INICIO DAS CONFIGURAÇÕES DO BLOCO 01 */
 
 #quem-e{
-    max-width: 600px;
+    max-width: 710px;
     display: grid;
     gap: 5px;
     grid-template-areas: 
@@ -116,7 +126,7 @@ header > p{
 /* INICIO DAS CONFIGURAÇÕES DO BLOCO 02 */
 #tecnologias{
     margin: auto;
-    max-width: 600px ;
+    max-width: 710 ;
     margin-bottom: 0px;
 }
 #tecnologias > h2{
@@ -144,8 +154,9 @@ header > p{
 /* INICIO DAS CONFIGURAÇÕES DO BLOCO 03 */
 
 #portifolio{
-    max-width: 600px;
+    max-width: 710px;
     margin: auto;
+    display: block;
 }
 #portifolio > h2{
     padding: 30px;
@@ -157,5 +168,58 @@ header > p{
     background-color: white;
     padding: 20px;
     border-radius: 4px 4px 0px 0px;
+    display: flex;
+    margin: auto;
+}
+/* INICIO DA ÁREA DE PROJETOS */
+
+.projeto01 > h4{
+    margin-bottom: 10px;
+}
+.projeto01 > img{
+    border-radius: 6px;
+    border: 1px solid #5a5a54bd;
+    margin-top: 20;
+}
+.projeto01 > p{
+    font-size: 0.9em;
+    display: absolute;
+    margin-top: 15px;
+}
+.botaoprojeto{
+    background-color: var(--azul);
+    padding: 5px;
+    color: white;
+    font-size: 0.9em;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    max-width: 200px;
+    border-radius: 2px;
+}
+/* INICIO DO FOOTER */
+
+#nome{
+    color: white;
+    letter-spacing: 0.25em;
+    margin-bottom: 20px;
+}
+footer .content_footer{
+    max-width: 710px;
+    margin: auto;
+    padding: 20px 0px 0px 0px;
+}
+#redessociais > p{
+    display: inline-block;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+#footer2{
+    color: white;
+    text-align: center;
+    font-size: 0.7em;
+    padding-bottom: 5px;
+    
 }
 
