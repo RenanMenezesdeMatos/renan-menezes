@@ -1,0 +1,161 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@media screen and(min-width: 800px){
+    
+}
+:root{
+   --laranja: #F26433;
+   --preto: #5A5A54;
+   --azul: #4387F4;
+   --azulescuro: #26547C;
+   --brancoclaro: #F8F8F8;
+   --fontes: 'Raleway', sans-serif;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    color: var(--preto);
+    font-family: var(--fontes);
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--laranja);
+}
+/* CONFIGURAÇÕES DO HEADER */
+
+header{
+    background-color: var(--brancoclaro);
+    text-align: center;
+}
+header > menu{
+    background-color: white;
+    height: 45px;
+}
+header > h1{
+    color: var(--laranja);
+    letter-spacing: 0.25em;  
+    font-size: 1.5em; 
+    font-weight: 400; 
+    padding-top:30px;
+}
+header > #idioma{
+    font-size: 0.8em;
+    margin: 10px;
+}
+header > h2{
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+header > p{
+    font-size: 1em;
+    max-width: 500px;
+    display: inline-block;
+    padding: auto;
+    padding-bottom: 20px;
+}
+/* BACKGROUND DE CADA AREA*/
+.area1{
+    background-color: white;
+}
+.area2{
+    background-color: var(--brancoclaro);
+}
+.area3{
+    background-color: var(--azulescuro);
+}
+/* INICIO DAS CONFIGURAÇÕES DO BLOCO 01 */
+
+#quem-e{
+    max-width: 600px;
+    display: grid;
+    gap: 5px;
+    grid-template-areas: 
+    'h3 h3 h3 img'
+    'p p p  img'
+    'bt bt bt img';
+    padding-bottom: 20px;
+    margin: auto;
+}
+
+#quem-e > h2{
+    padding-top: 30px;
+    padding-bottom: 15px;
+    text-align: center;
+    display: block;
+    grid-area: h3;
+    font-weight: 500;
+
+}
+#quem-e > p{
+    margin-bottom: 10px;
+    text-align: center;
+    grid-area: p;
+    font-size: 0.8em;
+}
+#quem-e > img{
+    display: block;
+    grid-area: img;
+    margin-top: 30px;
+
+}
+#botao_tec {
+    background-color: var(--azul);
+    color: white;
+    display: block;
+    grid-area: bt;
+    padding: 5px;
+    font-size: 0.8em;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 2px;
+}
+/* INICIO DAS CONFIGURAÇÕES DO BLOCO 02 */
+#tecnologias{
+    margin: auto;
+    max-width: 600px ;
+    margin-bottom: 0px;
+}
+#tecnologias > h2{
+    padding-top: 30px;
+    padding-bottom: 15px;
+    margin: auto;
+    grid-area: h3;
+    font-weight: 500;
+    text-align: center;
+}
+#html, #css, #javascript, #node, #figma{
+    display: inline-block;
+    margin: 10px;
+    margin-bottom: 40px;
+    
+}
+#html, #css, #javascript, #node, #figma > img{
+    height: 64px;
+}    
+.picture{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+/* INICIO DAS CONFIGURAÇÕES DO BLOCO 03 */
+
+#portifolio{
+    max-width: 600px;
+    margin: auto;
+}
+#portifolio > h2{
+    padding: 30px;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+}
+#projetos{
+    background-color: white;
+    padding: 20px;
+    border-radius: 4px 4px 0px 0px;
+}
+
