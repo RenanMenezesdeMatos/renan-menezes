@@ -175,7 +175,6 @@ label span:nth-child(3){
 input:checked ~ .menu_itens{
     opacity: 1;
     transition: 0.2s ease-in-out;
-    transition: 0.7 s ease-in-out;
     left: 60%;
     text-align: center;
     filter: blur(0px);
